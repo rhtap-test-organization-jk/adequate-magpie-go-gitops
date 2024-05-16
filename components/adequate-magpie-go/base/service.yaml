@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: adequate-magpie-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: adequate-magpie-go 
+  name: adequate-magpie-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: adequate-magpie-go 

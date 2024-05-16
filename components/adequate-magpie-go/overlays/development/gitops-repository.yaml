@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: adequate-magpie-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/adequate-magpie-go-gitops
